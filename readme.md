@@ -60,3 +60,23 @@ Using this it then clasifies the positive comments to create a positive model an
 - Notebook: [youtube_comments/youtube_comments_positive_classification.ipynb](youtube_comments/youtube_comments_positive_classification.ipynb)
 - input dataset: [youtube_comments/comments.csv](youtube_comments/comments.csv)
 - output dataset: [youtube_comments/positive_comments_with_labels.csv](youtube_comments/positive_comments_with_labels.csv)
+
+# ***YouTube Comments Argument Mining***
+This notebook is the argument mining of the main dataset. It takes in the 2 datasets made previously runs some reasoning and stance detection and outputs the stance based on the argument. It then creates and trains a model to predict the stance with a 98.58% accuracy.
+
+
+## What I used and learnt
+- Argument mining
+- sentiment analysis
+- NLP
+- GPU processing
+
+## Key files
+- Notebook: [youtube_comments/youtube_comments_argument_mining.ipynb](youtube_comments/youtube_comments_argument_mining.ipynb)
+- Input dataset: [youtube_comments/negative_comments_with_labels.csv](youtube_comments/negative_comments_with_labels.csv)
+- Input dataset: [youtube_comments/positive_comments_with_labels.csv](youtube_comments/positive_comments_with_labels.csv)
+- output dataset: [youtube_comments/youtube_comments_argument_mined.csv](youtube_comments/youtube_comments_argument_mined.csv)
+- output dataset: [youtube_comments/youtube_comments_with_predictions.csv](youtube_comments/youtube_comments_with_predictions.csv)
+- output model: [youtube_comments/AM_models/best_stance_model.joblib](youtube_comments/AM_models/best_stance_model.joblib)
+- output model: [youtube_comments/AM_models/stance_lr_model.joblib](youtube_comments/AM_models/stance_lr_model.joblib)
+- output model: [youtube_comments/AM_models/tfidf_vectorizer.joblib](youtube_comments/AM_models/tfidf_vectorizer.joblib)
